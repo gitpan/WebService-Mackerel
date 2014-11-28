@@ -4,6 +4,7 @@ author:
   - 'Tatsuro Hisamori <myfinder@cpan.org>'
 build_requires:
   Test::Double: '0.05'
+  Test::Fatal: '0.013'
   Test::More: '0.98'
 configure_requires:
   Module::Build::Tiny: '0.035'
@@ -24,6 +25,10 @@ no_index:
     - examples
     - author
     - builder
+provides:
+  WebService::Mackerel:
+    file: lib/WebService/Mackerel.pm
+    version: '0.01'
 requires:
   HTTP::Tiny: '0.050'
   JSON: '2.90'
@@ -32,6 +37,6 @@ resources:
   bugtracker: https://github.com/myfinder/webservice-mackerel/issues
   homepage: https://github.com/myfinder/webservice-mackerel
   repository: git://github.com/myfinder/webservice-mackerel.git
-version: 0.01_2
+version: '0.01'
 x_contributors:
   - 'Tatsuro Hisamori <medianetworks@gmail.com>'
